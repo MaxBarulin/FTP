@@ -38,7 +38,7 @@ def main():
     print(f'Средняя ошибка по всем фолдам: {sum(losses)/len(losses):.4f}')
 
     # Предсказание на новых данных
-    new_flange = [[600, 300, 46]] # Замените на реальные значения
+    new_flange = [[600, 400, 38]] # Замените на реальные значения
     predicted_time = predict(model, scaler, new_flange)
     print(f'Предсказанная норма времени для фланца {new_flange}: {predicted_time:.2f}')
 
